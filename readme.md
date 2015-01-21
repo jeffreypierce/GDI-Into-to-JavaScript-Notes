@@ -1,6 +1,10 @@
 ## Intro to JavaScript & jQuery
 ### Girl Develop It, January 2015
 
+Teacher: **Jeffrey Pierce**  
+[jeffrey@jeffreypierce.net](mailto: jeffrey@jeffreypierce.net)
+, [@jeffrey_pierce](https://twitter.com/jeffrey_pierce)
+
 #### Learning Resources
 + [Code School](https://www.codeschool.com/paths/javascript)
 + [Codecadamy](http://www.codecademy.com/en/tracks/javascript)
