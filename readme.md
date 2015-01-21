@@ -54,7 +54,8 @@ Snack Calculator - [Codepen](http://codepen.io/jeffreypierce/pen/jEmmKG)
 Function Scope - [Codepen](http://codepen.io/jeffreypierce/pen/pvPYEZ)
 
 HTML to begin **Class Two** (index.html):
-``` <html>
+```
+<html>
 <head>
 <title>My Site!</title>
 </head>
