@@ -90,6 +90,37 @@ var calculate = function() {
 ```
 
 ### Class Two
+[Slides](http://girldevelopit.github.io/gdi-core-javascript/class2.html) / [Code Snippets](https://github.com/girldevelopit/gdi-core-javascript/tree/master/class2)
+
+
++ Loops
+  + While Loops
+  + For loops
+    + `for(var i=0; i < condition; i++){ ... }`
++ Arrays
+  + `var arr = ["item 3", "item 2", "item 3"]`
+  + `arr[2]` is "item 3"
+  + .push(), .pop(), .slice()
++ Objects
+  + ```
+  var obj = {
+    key1 = "value 1",
+    key2 = "value 2"
+  };
+  ```
+  + `obj.key1` and / or `obj['key1']` equals "value 2"
+  + delete
++ Arrays of Objects
++ "DOM" = Document Object Model
+  + How JavaScript interacts with HTML
+  + parentNode, childNode, siblingNode, etc.
+  + document.getElementById('...')
+  + document.getElementsByTagName('...')
+  + document.createElement('...')
+  + node.innerHTML
+  + node.setAttributes
+
+Dom Interaction, Arrays and Loops - [Codepen](http://codepen.io/jeffreypierce/pen/WbEwNe)
 
 ##### Bonus Question!!!
 You work for a hipster e-commerce website and your boss *needs* to know which items sold for over $40 in the last three days.
@@ -155,3 +186,32 @@ With your new found JavaScript skills you decide to loop over this object and cr
 An easy way to compare dates is with the `.getTime()` method. It returns the number of milliseconds since January 1st 1970.
 
 i.e. `var yesterday = new Date("Sat Jan 23 2015 09:01:00 GMT-0500 (EST)").getTime()`
+
+### Class Three
+[Slides](http://girldevelopit.github.io/gdi-core-javascript/class3.html) / [Code Snippets](https://github.com/girldevelopit/gdi-core-javascript/tree/master/class3)
+
++ jQuery!!!
+  + a library for easier DOM interaction (and much more)
+  + cdn: content delevery network
+    + "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"
+    + load BEFORE your code
+  + uses css selectors:
+    + `document.getElementById('myNode')` becomes `$('#myNode')`
+    + `document.createElement('li')` becomes `$("<li><li>")`
+  + Once you have a jQuery object (select or create) you can use methods:
+    + .css()
+    + .html()
+    + .attr()
+    + .hide()
+    + and on and on
+  + events
+    + `$('.box').click(function()){...});`
+    + mouseenter, mouseleave, ready, [more](http://api.jquery.com/category/events/)
+  + wrap your code in DOM ready
+    + `$(document).ready(function(){...});`
+
+DOM interaction w/ jQuery - [Codepen](http://codepen.io/jeffreypierce/pen/GgvZJP)  
+DOM events - [Codepen](http://codepen.io/jeffreypierce/pen/jEwoPP)
+
+**Bonus Question!!!**  
+Look at the rest of the slides (link above) and create a form with 3 text fields, a checkbox, and a submit button. When the form is submitted, if the checkbox is checked, concatenate the fields into a sentence and place the result in a `div`. If the checkbox is not checked, put the sentence "Please check the box" in the result `div`.
